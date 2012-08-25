@@ -1,7 +1,7 @@
 Summary:	Cron daemon
 Name:		cronie
 Version:	1.4.8
-Release:	7
+Release:	8
 License:	MIT and BSD and GPL v2
 Group:		Daemons
 Source0:	https://fedorahosted.org/releases/c/r/cronie/%{name}-%{version}.tar.gz
@@ -16,9 +16,8 @@ URL:		https://fedorahosted.org/cronie/
 BuildRequires:	autoconf
 BuildRequires:	automake
 BuildRequires:	pam-devel
-Requires(post):	fileutils
 Requires(post,preun,postun):	systemd-units
-Requires(pre,postun):	coreutils
+Requires(pre,post,postun):	coreutils
 Requires(pre):	pwdutils
 Requires:	psmisc
 Provides:	crondaemon
