@@ -1,5 +1,5 @@
-SHELL=/bin/sh
-PATH=/usr/sbin:/usr/bin
+SHELL=/usr/bin/sh
+PATH=/usr/bin:/usr/sbin
 MAILTO=root
 NICE=15
 

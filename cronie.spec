@@ -1,7 +1,7 @@
 Summary:	Cron daemon
 Name:		cronie
 Version:	1.4.8
-Release:	8
+Release:	9
 License:	MIT and BSD and GPL v2
 Group:		Daemons
 Source0:	https://fedorahosted.org/releases/c/r/cronie/%{name}-%{version}.tar.gz
@@ -104,7 +104,7 @@ fi
 if [ "$1" = "0" ]; then
 	%groupremove crontab
 fi
-%systemd_reload
+%systemd_postun
 
 %files
 %defattr(644,root,root,755)
