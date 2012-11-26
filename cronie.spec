@@ -1,17 +1,16 @@
 Summary:	Cron daemon
 Name:		cronie
-Version:	1.4.8
-Release:	9
+Version:	1.4.9
+Release:	1
 License:	MIT and BSD and GPL v2
 Group:		Daemons
 Source0:	https://fedorahosted.org/releases/c/r/cronie/%{name}-%{version}.tar.gz
-# Source0-md5:	9b1d2ce6db8d1883e06635f437170657
+# Source0-md5:	9133195e5e6f824ef460f5ccc533f1b7
 Source1:	%{name}.service
 Source2:	%{name}.logrotate
 Source3:	%{name}.crontab
 Source4:	%{name}.pam
 Source5:	run-parts
-Patch0:		%{name}-nosyscrontab.patch
 URL:		https://fedorahosted.org/cronie/
 BuildRequires:	autoconf
 BuildRequires:	automake
@@ -41,7 +40,6 @@ however this could be overloaded in settings.
 
 %prep
 %setup -q
-%patch0 -p1
 
 %build
 %{__aclocal}
