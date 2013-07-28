@@ -1,11 +1,11 @@
 Summary:	Cron daemon
 Name:		cronie
-Version:	1.4.9
+Version:	1.4.11
 Release:	1
 License:	MIT and BSD and GPL v2
 Group:		Daemons
 Source0:	https://fedorahosted.org/releases/c/r/cronie/%{name}-%{version}.tar.gz
-# Source0-md5:	9133195e5e6f824ef460f5ccc533f1b7
+# Source0-md5:	2ba645cf54de17f138ef70312843862f
 Source1:	%{name}.service
 Source2:	%{name}.logrotate
 Source3:	%{name}.crontab
